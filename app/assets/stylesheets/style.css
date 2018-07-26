@@ -1,0 +1,107 @@
+/* CSS for site */
+
+/*Makes the H1's be gold*/
+h1{
+	color: #C2A14D;
+	text-transform: uppercase;
+}
+
+/*Makes the page breaks be gold*/
+hr{
+	border-top: 1px solid #C2A14D;
+}
+
+/*Makes the text on main image be at the bottom of the page. Note that its div has this in its html: id="picturetextflexcenter"  so that it can be specifically referenced here in the css*/
+#picturetextflexcenter{
+	align-items: flex-end;
+}
+
+/*Brings up the main image text a little bit so its not at the verrrry bottom of the page. Note that its div has this in its html: id="picturetext"  so that it can be specifically referenced here in the css*/
+#picturetext{
+margin-bottom: 30px;
+}
+
+#leftalign{
+	text-align: left;
+	/*white-space: nowrap;*/
+}
+
+.fa{
+	 display: inline-block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #5C5B5D;
+}
+
+.section h4{
+	font-weight: 600;
+	color:#5C5B5D;
+}
+
+.md-pills .nav-link {
+	/*color:#666;*/
+	color:#0E305D;
+}
+
+.navbar{
+	  font-weight: 400;
+}
+
+.subtext-header{
+	  font-weight: 400;	
+}
+
+/*Puts space between the logo in the navbar and the rest of the nav links*/
+.navbar a img {
+    margin-top: -5px;
+    margin-bottom: -100px;
+  padding-right: 20px;
+}
+
+/*This media query makes the nav bar links not sit on top of the logo when the navbar is collapsed. */
+@media (min-width: 1px) and (max-width: 991px) {
+   .navbar-collapse {
+       margin-top: 100px;
+   }
+}
+
+/*Makes the hazing button red*/
+.btn-warning {
+    background-color: #720000;
+}
+
+.btn-warning.active, .btn-warning:active, .btn-warning:focus, .btn-warning:hover {
+    background-color: #a50000!important;
+}
+
+.btn-info.active, .btn-info:active, .btn-info:focus, .btn-info:hover {
+    background-color: #154789!important;
+}
+
+
+/*Changes the styling of the nav links in the Chapter Resources section. Note that its div has this in its html: id="resourcenav"  so that it can be specifically referenced here in the css*/
+#resourcenav{
+	padding: 0px;
+}
+
+/*Changes the styling of the descriptions in the Chapter Resources section. Note that its div has this in its html: id="resourcenav"  so that it can be specifically referenced here in the css*/
+#resourcedesc{
+    margin-top: -2rem!important;
+}
+
+/*This media query makes the margin above the chapter resources description be 1.5 instead of 2 when the navs sit on top of the description instead of beside it */
+@media (min-width: 1px) and (max-width: 767px) {
+    #resourcedesc{
+        margin-top: -1.3rem!important;
+    }
+}
+
+#resourcebutton{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}

@@ -1,0 +1,61 @@
+<%= form_for(@contact) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <!-- First row -->
+  <div class="row">
+      <div class="col-md-12">
+          <div class="md-form">
+              <i class="fa fa-user prefix grey-text"></i>
+              <%= f.label :name %><br>
+              <%= f.text_field :name, class:"form-control" %>
+          </div>
+      </div>
+  </div>
+  <!-- First row -->
+
+  <!-- Second row -->
+  <div class="row">
+      <div class="col-md-12">
+          <div class="md-form">
+              <i class="fa fa-envelope prefix grey-text"></i>
+              <%= f.label :email%><br>
+              <%= f.text_field :email, class:"form-control"  %>
+          </div>
+      </div>
+  </div>
+  <!-- Second row -->
+
+  <!-- Third row -->
+  <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-12">
+          <div class="md-form">
+              <i class="fa fa-pencil prefix grey-text"></i>
+              <%= f.label :message %><br>
+              <%= f.text_area :message, class:"md-textarea"%>
+          </div>
+
+      </div>
+  </div>
+  <!-- Third row -->
+
+  
+  <div class="actions text-center">
+     <%= button_tag type: 'submit', class: "btn btn-info" do %>
+        Send <i class="fa fa-paper-plane-o ml-1"></i> 
+     <% end %>
+  </div>
+  
+<% end %>
+
+
