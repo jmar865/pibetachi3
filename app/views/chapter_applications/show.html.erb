@@ -1,0 +1,101 @@
+<!--Application-->
+
+<%= render "layouts/navbar_for_additional_pages"%>
+
+<div class="container" style="height:100%;">
+    <h1 class="section-heading my-5 py-5 font-bold">Start a Chapter</h1>
+    <p id="notice"><%= notice %></p>
+    
+    <p>
+      <strong>Name:</strong>
+      <%= @chapter_application.applicant_name %>
+    </p>
+    
+    <p>
+      <strong>Phone:</strong>
+      <%= @chapter_application.applicant_phone %>
+    </p>
+    
+    <p>
+      <strong>Email:</strong>
+      <%= @chapter_application.applicant_email %>
+    </p>
+    
+    <p>
+      <strong>City:</strong>
+      <%= @chapter_application.city %>
+    </p>
+    
+    <p>
+      <strong>State:</strong>
+      <%= @chapter_application.state %>
+    </p>
+    
+    <p>
+      <strong>School:</strong>
+      <%= @chapter_application.school %>
+    </p>
+    
+    <p>
+      <strong>Number of Members:</strong>
+      <%= @chapter_application.members_num %>
+    </p>
+    
+    <p>
+      <strong>Has Chapter House:</strong>
+      <%= @chapter_application.chapter_house %>
+    </p>
+    
+    <p>
+      <strong>Mailing Address:</strong>
+      <%= @chapter_application.mailing_address %>
+    </p>
+    
+    <p>
+      <strong>Active Executive Board:</strong>
+      <%= @chapter_application.active_exec %>
+    </p>
+    
+    <p>
+      <strong>Executive Board Positions:</strong>
+      <%= @chapter_application.exec_positions %>
+    </p>
+    
+    <p>
+      <strong>Purpose:</strong>
+      <%= @chapter_application.purpose %>
+    </p>
+    
+    <p>
+      <strong>Why Pi Beta Chi:</strong>
+      <%= @chapter_application.why_pbx %>
+    </p>
+    
+    <p>
+      <strong>Philanthropy:</strong>
+      <%= @chapter_application.philanthropy %>
+    </p>
+    
+    <p>
+      <strong>Community Service:</strong>
+      <%= @chapter_application.community_service %>
+    </p>
+    
+    <p>
+      <strong>Has Former Organization:</strong>
+      <%= @chapter_application.former_org %>
+    </p>
+    
+    <p>
+      <strong>Former Organization Name:</strong>
+      <%= @chapter_application.former_org_name %>
+    </p>
+    
+    <p>
+      <strong>Former Organization Reason:</strong>
+      <%= @chapter_application.former_org_reason %>
+    </p>
+</div>
+
+<%#= link_to 'Edit', edit_application_path(@chapter_application) %> |
+<%#= link_to 'Back', applications_path %>

@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,23 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170925180724) do
+ActiveRecord::Schema.define(version: 20180910171554) do
 
-  create_table "applications", force: :cascade do |t|
-    t.string   "name"
+  create_table "chapter_applications", force: :cascade do |t|
+    t.string   "applicant_name"
+    t.string   "applicant_phone"
+    t.string   "applicant_email"
     t.string   "city"
     t.string   "state"
     t.string   "school"
-    t.string   "new_or_existing_org"
+    t.integer  "members_num"
+    t.string   "chapter_house"
+    t.text     "mailing_address"
+    t.string   "active_exec"
+    t.text     "exec_positions"
     t.text     "purpose"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.text     "why_pbx"
+    t.text     "philanthropy"
+    t.text     "community_service"
+    t.string   "former_org"
+    t.string   "former_org_name"
+    t.text     "former_org_reason"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.text   "message"
+    t.string   "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

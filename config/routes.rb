@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :applications
+  resources :chapter_applications
   resources :contacts
   root 'static_page#index'
   get "hazing" => 'static_page#hazing'

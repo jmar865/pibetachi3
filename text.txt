@@ -24,6 +24,9 @@ How much are dues
 What does PBX offer
 What is the pledge process
 Do you haze
+What do you mean by off campus
+are you insured
+are you a real org
 
 App q's: 
 Name of applicant
@@ -36,7 +39,10 @@ number of members
 were you formerly part of another organization
 are you currently part of another organization
 what is the purpose of your Chapter
+do you have an active exec board
 do you have a Chapter house
 Chapter mailing address
 philanthropy
 comm service
+
+rails g scaffold chapter_application applicant_name:string applicant_phone:string applicant_email:string city:string state:string school:string members_num:integer chapter_house:string mailing_address:text active_exec:string exec_positions:text purpose:text why_pbx:text philanthropy:text community_service:text former_org:string former_org_name:string former_org_reason:text

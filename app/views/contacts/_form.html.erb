@@ -16,7 +16,7 @@
       <div class="col-md-12">
           <div class="md-form">
               <i class="fa fa-user prefix grey-text"></i>
-              <%= f.label :name %><br>
+              <%= f.label :name,'What is your name?' %><br>
               <%= f.text_field :name, class:"form-control" %>
           </div>
       </div>
@@ -28,7 +28,7 @@
       <div class="col-md-12">
           <div class="md-form">
               <i class="fa fa-envelope prefix grey-text"></i>
-              <%= f.label :email%><br>
+              <%= f.label :email, 'What is your email?'%><br>
               <%= f.text_field :email, class:"form-control"  %>
           </div>
       </div>
@@ -41,7 +41,7 @@
       <div class="col-md-12">
           <div class="md-form">
               <i class="fa fa-pencil prefix grey-text"></i>
-              <%= f.label :message %><br>
+              <%= f.label :message, 'What is your message for us?' %><br>
               <%= f.text_area :message, class:"md-textarea"%>
           </div>
 
@@ -49,7 +49,6 @@
   </div>
   <!-- Third row -->
 
-  
   <div class="actions text-center">
      <%= button_tag type: 'submit', class: "btn btn-info" do %>
         Send <i class="fa fa-paper-plane-o ml-1"></i> 

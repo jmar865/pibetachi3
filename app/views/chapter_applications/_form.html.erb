@@ -1,0 +1,200 @@
+<%= form_for(@chapter_application) do |f| %>
+  <% if @chapter_application.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@chapter_application.errors.count, "error") %> prohibited this application from being saved:</h2>
+
+      <ul>
+      <% @chapter_application.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-user prefix grey-text"></i>
+            <%= f.label :applicant_name, 'What is your name?' %><br>
+            <%= f.text_field :applicant_name, class:"form-control" %>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-phone prefix grey-text"></i>
+            <%= f.label :applicant_phone, 'What is your phone number?' %><br>
+            <%= f.text_field :applicant_phone, class:"form-control" %>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-envelope prefix grey-text"></i>
+            <%= f.label :applicant_email, 'What is your email?' %><br>
+            <%= f.text_field :applicant_email, class:"form-control" %>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :city, 'What City is your group in?' %><br>
+            <%= f.text_field :city, class:"form-control" %>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :state, 'What State is your group in?' %><br>
+            <%= f.text_field :state, class:"form-control" %>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :school, 'What school are your members students of?' %><br>
+            <%= f.text_field :school, class:"form-control" %>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+  <div class="col-md-12">
+      <div class="md-form">
+          <i class="fa fa-pencil prefix grey-text"></i>
+          <%= f.label :members_num, 'How many members does your group currently have?' %><br>
+          <%= f.number_field :members_num, class:"form-control" %>
+      </div>
+  </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :chapter_house, 'Does your group have a Chapter House?' %><br>
+            <%= f.text_field :chapter_house, class:"form-control" %>
+        </div>
+    </div>
+  </div>  
+  
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :mailing_address, 'What is your group\'s mailing address?' %><br>
+            <%= f.text_field :mailing_address, class:"form-control" %>
+        </div>
+    </div>
+  </div>  
+  
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :active_exec, 'Does your group currently have an active Executive Board?' %><br>
+            <%= f.text_field :active_exec, class:"form-control" %>
+        </div>
+    </div>
+  </div>    
+  
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :exec_positions, 'If yes, what positions are on your Executive Board?' %><br>
+            <%= f.text_area :exec_positions, class:"md-textarea" %>
+        </div>
+    </div>
+  </div>  
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :purpose, 'What is the purpose of your group?' %><br>
+            <%= f.text_area :purpose, class:"md-textarea" %>
+        </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :why_pbx, 'Why does your group want to join Pi Beta Chi?' %><br>
+            <%= f.text_area :why_pbx, class:"md-textarea" %>
+        </div>
+    </div>
+  </div>  
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :philanthropy, 'What Philanthropy organizations does your group support?' %><br>
+            <%= f.text_area :philanthropy, class:"md-textarea" %>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :community_service, 'What Community Service initiatives does your group support?' %><br>
+            <%= f.text_area :community_service, class:"md-textarea" %>
+        </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :former_org, 'Was your group formerly associated with another Greek organization?' %><br>
+            <%= f.text_field :former_org, class:"form-control" %>
+        </div>
+    </div>
+  </div>    
+  
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :former_org_name, 'If yes, what is the name of the former organization?' %><br>
+            <%= f.text_field :former_org_name, class:"form-control" %>
+        </div>
+    </div>
+  </div>  
+  
+  <div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+            <i class="fa fa-pencil prefix grey-text"></i>
+            <%= f.label :former_org_reason, 'If yes, why did your group leave that organization?' %><br>
+            <%= f.text_area :former_org_reason, class:"md-textarea" %>
+        </div>
+    </div>
+  </div>   
+
+  <div class="actions text-center">
+     <%= button_tag type: 'submit', class: "btn btn-info" do %>
+        Send <i class="fa fa-paper-plane-o ml-1"></i> 
+     <% end %>
+  </div>
+  
+<% end %>

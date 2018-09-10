@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  applicant_name: MyString
+  applicant_phone: MyString
+  applicant_email: MyString
+  city: MyString
+  state: MyString
+  school: MyString
+  members_num: 1
+  chapter_house: MyString
+  mailing_address: MyText
+  active_exec: MyString
+  exec_positions: MyText
+  purpose: MyText
+  why_pbx: MyText
+  philanthropy: MyText
+  community_service: MyText
+  former_org: MyString
+  former_org_name: MyString
+  former_org_reason: MyText
+
+two:
+  applicant_name: MyString
+  applicant_phone: MyString
+  applicant_email: MyString
+  city: MyString
+  state: MyString
+  school: MyString
+  members_num: 1
+  chapter_house: MyString
+  mailing_address: MyText
+  active_exec: MyString
+  exec_positions: MyText
+  purpose: MyText
+  why_pbx: MyText
+  philanthropy: MyText
+  community_service: MyText
+  former_org: MyString
+  former_org_name: MyString
+  former_org_reason: MyText

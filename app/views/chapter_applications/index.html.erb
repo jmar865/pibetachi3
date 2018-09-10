@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chapter Applications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Applicant name</th>
+      <th>Applicant phone</th>
+      <th>Applicant email</th>
+      <th>City</th>
+      <th>State</th>
+      <th>School</th>
+      <th>Members num</th>
+      <th>Chapter house</th>
+      <th>Mailing address</th>
+      <th>Active exec</th>
+      <th>Exec positions</th>
+      <th>Purpose</th>
+      <th>Why pbx</th>
+      <th>Philanthropy</th>
+      <th>Community service</th>
+      <th>Former org</th>
+      <th>Former org name</th>
+      <th>Former org reason</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chapter_applications.each do |chapter_application| %>
+      <tr>
+        <td><%= chapter_application.applicant_name %></td>
+        <td><%= chapter_application.applicant_phone %></td>
+        <td><%= chapter_application.applicant_email %></td>
+        <td><%= chapter_application.city %></td>
+        <td><%= chapter_application.state %></td>
+        <td><%= chapter_application.school %></td>
+        <td><%= chapter_application.members_num %></td>
+        <td><%= chapter_application.chapter_house %></td>
+        <td><%= chapter_application.mailing_address %></td>
+        <td><%= chapter_application.active_exec %></td>
+        <td><%= chapter_application.exec_positions %></td>
+        <td><%= chapter_application.purpose %></td>
+        <td><%= chapter_application.why_pbx %></td>
+        <td><%= chapter_application.philanthropy %></td>
+        <td><%= chapter_application.community_service %></td>
+        <td><%= chapter_application.former_org %></td>
+        <td><%= chapter_application.former_org_name %></td>
+        <td><%= chapter_application.former_org_reason %></td>
+        <td><%= link_to 'Show', chapter_application %></td>
+        <td><%= link_to 'Edit', edit_chapter_application_path(chapter_application) %></td>
+        <td><%= link_to 'Destroy', chapter_application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chapter Application', new_chapter_application_path %>
