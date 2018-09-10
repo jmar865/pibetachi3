@@ -28,6 +28,9 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
+        
+        ContactMailer.contact_email(@contact).deliver
+        
         format.html { redirect_to @contact, notice: 'Your message was sent successfully' }
         format.json { render :show, status: :created, location: @contact }
       else

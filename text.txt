@@ -16,3 +16,27 @@ Networking: A great benefit of PBX membership is being in a broad but tight netw
 
 Fundraising
 Pledgeship
+
+Q's:
+How to join a chapter
+How to start a chapter
+How much are dues
+What does PBX offer
+What is the pledge process
+Do you haze
+
+App q's: 
+Name of applicant
+applicant phone
+applicant email
+city
+state
+school
+number of members
+were you formerly part of another organization
+are you currently part of another organization
+what is the purpose of your Chapter
+do you have a Chapter house
+Chapter mailing address
+philanthropy
+comm service
