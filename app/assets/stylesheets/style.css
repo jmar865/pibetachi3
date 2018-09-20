@@ -105,3 +105,66 @@ body {
     padding-left: 25px;
     padding-right: 25px;
 }
+
+
+/************************for the login form************************/
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#inputEmail:focus:not([readonly]) {
+    border-bottom: 1px solid #0E305D;
+    box-shadow: 0 1px 0 0 #0E305D;
+}
+
+#inputEmail:focus {
+    border-color: #0E305D;
+}
+
+#inputPassword:focus:not([readonly]) {
+    border-bottom: 1px solid #0E305D;
+    box-shadow: 0 1px 0 0 #0E305D;
+}
+
+#inputPassword:focus {
+    border-color: #0E305D;
+}
+
+#loginButton {
+    background-color: #0E305D
+}
+
+#loginButton.active, #loginButton:active, #loginButton:focus, #loginButton:hover {
+    background-color: #154789!important;
+}

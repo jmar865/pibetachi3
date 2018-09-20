@@ -5,4 +5,7 @@ class StaticPageController < ApplicationController
   def hazing
   end
   
+  def login
+  end
+  
 end

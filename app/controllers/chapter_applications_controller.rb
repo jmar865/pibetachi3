@@ -10,6 +10,11 @@ class ChapterApplicationsController < ApplicationController
   # GET /chapter_applications/1
   # GET /chapter_applications/1.json
   def show
+    if $chapterAppCreatedAt.to_s == @chapter_application.created_at.to_s
+      render "chapter_applications/show"
+    else
+      redirect_to root_url
+    end
   end
 
   # GET /chapter_applications/new
@@ -29,6 +34,7 @@ class ChapterApplicationsController < ApplicationController
     respond_to do |format|
       if @chapter_application.save
         
+        $chapterAppCreatedAt = @chapter_application.created_at
         ChapterApplicationMailer.chapter_application_email(@chapter_application).deliver
         
         format.html { redirect_to @chapter_application, notice: 'Your Chapter application was sent successfully. You\'ll hear back from us soon.' }

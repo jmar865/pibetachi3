@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  resources :chapter_applications
-  resources :contacts
+  resources :chapter_applications, only: [:new, :create, :show]
+  resources :contacts, only: [:new, :create, :show]
   root 'static_page#index'
   get "hazing" => 'static_page#hazing'
   get "start" => 'static_page#start'
-  get "contact" => 'static_page#contact'
+  #get "contact" => 'static_page#contact'
   get "index" => 'static_page#index'
+  get "login" => 'static_page#login'
   
   
   # The priority is based upon order of creation: first created -> highest priority.

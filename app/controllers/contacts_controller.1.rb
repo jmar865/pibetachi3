@@ -10,15 +10,17 @@ class ContactsController < ApplicationController
   # GET /contacts/1
   # GET /contacts/1.json
   def show
-    if session[:contactCreatedAt] == @contact.created_at.to_s
+    if @@contactCreatedAt.to_s == @contact.created_at.to_s
       render "contacts/show"
-
+      
+      puts '*****************'
+      puts @@contactCreatedAt
+      puts @@contactCreatedAt.class
+      puts @contact.created_at
+      puts @contact.created_at.class
     else
       redirect_to root_url
-      
-      #puts '*****************'
-      #puts session[:contactCreatedAt]
-      #puts @contact.created_at
+
     end
   end
 
@@ -39,7 +41,7 @@ class ContactsController < ApplicationController
     respond_to do |format|
       if @contact.save
         
-        session[:contactCreatedAt] = @contact.created_at.to_s
+        @@contactCreatedAt = @contact.created_at
         ContactMailer.contact_email(@contact).deliver
         
         format.html { redirect_to @contact, notice: 'Your message was sent successfully. Thank you.' }

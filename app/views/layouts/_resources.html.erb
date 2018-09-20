@@ -39,7 +39,13 @@
                             </li>
                             <li class="nav-item" id="resourcenav">
                                 <a class="nav-link" id="leftalign" data-toggle="tab" href="#panel58" role="tab"> Property Management Guide</a>
-                            </li>                            
+                            </li>     
+                            <li class="nav-item" id="resourcenav">
+                                <a class="nav-link" id="leftalign" data-toggle="tab" href="#panel59" role="tab"> Rush Calendar Template</a>
+                            </li>    
+                            <li class="nav-item" id="resourcenav">
+                                <a class="nav-link" id="leftalign" data-toggle="tab" href="#panel60" role="tab"> Semester Calendar Template</a>
+                            </li>                                
                         </ul>
                         
                     </div>
@@ -55,13 +61,15 @@
                                 
                                 <h4 class="mt-4 mb-4 text-center" id="resourcedesc">Starter By-Laws</h4>
 
-                                <p class="text-center">Documentation for this is coming soon.</p>
+                                <p>
+                                    By-Laws are the rules which govern a Chapter and its members. They give leadership positions their power, specify how members can vote, explain how to ratify a budget, say how to transfer leadership, and much more. Chapter By-Laws are like the Constitution of a Chapter. When opportunities or problems arise, you consult the By-Laws for resolution. As such, it is very important for each Chapter to have clear, concise, and thorough By-Laws. This document is our By-Laws for new Chapters. These By-Laws may be amended and updated per the rules set forth within.
+                                </p>
                                 
                                 <div class="row " data-wow-delay="0.2s">
                                     <!--First column-->
                                     <div class="col-md-12 text-center">
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Download</button>
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Open</button>
+                                        <%= link_to "Download", login_path, class: "btn btn-info"%>
+                                        <%= link_to "Open", login_path, class: "btn btn-info"%>
                                     </div>
                                     <!--First column-->
                                 </div>
@@ -75,13 +83,15 @@
                                 
                                 <h4 class="mt-4 mb-4 text-center" id="resourcedesc">Leadership Positions and Duties</h4>
 
-                                <p class="text-center">Documentation for this is coming soon.</p>
+                                <p>
+                                    Each Chapter has several leadership positions for its members to fill. There are Executive Board positions like President and Treasurer, Committee positions like Brotherhood Committee Chairman and Recruitment Committee member, and one-man positions such as Chapter Historian and House Manager. Every position is important and tantamount to a Chapter’s ability to reach its full potential. This document is a list of the common leadership positions (you can create one not on this list) and their responsibilities.
+                                </p>
                                 
                                 <div class="row " data-wow-delay="0.2s">
                                     <!--First column-->
                                     <div class="col-md-12 text-center">
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Download</button>
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Open</button>
+                                        <%= link_to "Download", login_path, class: "btn btn-info"%>
+                                        <%= link_to "Open", login_path, class: "btn btn-info"%>
                                     </div>
                                     <!--First column-->
                                 </div>                                
@@ -95,13 +105,15 @@
                                 
                                 <h4 class="mt-4 mb-4 text-center" id="resourcedesc">Committee Duties</h4>
 
-                                <p class="text-center">Documentation for this is coming soon.</p>
+                                <p>
+                                    Committees are what allow every single member to be a leader and contribute directly to their Chapter’s success at any time. There are the Brotherhood, Recruitment, Social, and Scholarship committees to name a few. Each committee has a Chairman and multiple committeemen. The Chairmen are elected and the committeemen are any members which wish to serve. Some Chapters mandate that every member be on at least three committees at all times. Being an effective committeeman is a great way to show your leadership potential and step towards higher positions. This document explains each Committee and how to make them successful.
+                                </p>
                                 
                                 <div class="row " data-wow-delay="0.2s">
                                     <!--First column-->
                                     <div class="col-md-12 text-center">
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Download</button>
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Open</button>
+                                        <%= link_to "Download", login_path, class: "btn btn-info"%>
+                                        <%= link_to "Open", login_path, class: "btn btn-info"%>
                                     </div>
                                     <!--First column-->
                                 </div>                            
@@ -115,13 +127,15 @@
                                 
                                 <h4 class="mt-4 mb-4 text-center" id="resourcedesc">Points System</h4>
 
-                                <p class="text-center">Documentation for this is coming soon.</p>
+                                <p>
+                                    The Points System is a way to establish seniority between members within the organization. This is helpful to resolve disputes such as who gets the best room in the house, who gets the last spot on the trip, etc. Some members are older, but other members have held more positions, and others have better grades, so it can be tough to establish a clear hierarchy. The Points System rewards leadership experience and academic performance, and it penalizes riskiness. Like the By-Laws, it can be amended to best suit each Chapter.
+                                </p>
                                 
                                 <div class="row " data-wow-delay="0.2s">
                                     <!--First column-->
                                     <div class="col-md-12 text-center">
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Download</button>
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Open</button>
+                                        <%= link_to "Download", login_path, class: "btn btn-info"%>
+                                        <%= link_to "Open", login_path, class: "btn btn-info"%>
                                     </div>
                                     <!--First column-->
                                 </div>                                
@@ -133,15 +147,17 @@
                             <div class="tab-pane fade" id="panel55" role="tabpanel">
                                 <br>
                                 
-                                <h4 class="mt-4 mb-4 text-center" id="resourcedesc">FIPG Policy</h4>
+                                <h4 class="mt-4 mb-4 text-center" id="resourcedesc">FIPG Risk Management Policy</h4>
 
-                                <p class="text-center">Documentation for this is coming soon.</p>
+                                <p>
+                                    The Fraternal Information and Programming Group (FIPG) Policy is PBX’s definitive risk management policy. Its purpose is to make our experience a safer one for all of our members and guests. It establishes rules and practices to prevent physical and psychological harm, and to protect us from liability risk. It addresses topics such as alcohol consumption, drug use, hazing, assault, hosting events, fire prevention and property safety, responsibilities of Chapter leaders, and the education of new members. This document describes the history of FIPG, why it is needed, the policy itself, how to effectively implement it, and how to educate members on it.
+                                </p>
                                 
                                  <div class="row " data-wow-delay="0.2s">
                                     <!--First column-->
                                     <div class="col-md-12 text-center">
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Download</button>
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Open</button>
+                                        <%= link_to "Download", login_path, class: "btn btn-info"%>
+                                        <%= link_to "Open", login_path, class: "btn btn-info"%>
                                     </div>
                                     <!--First column-->
                                 </div>                              
@@ -155,13 +171,15 @@
                                 
                                 <h4 class="mt-4 mb-4 text-center" id="resourcedesc">Pledge Process</h4>
 
-                                <p class="text-center">Documentation for this is coming soon.</p>
+                                <p>
+                                    Pledging PBX is an enjoyable and educational experience which transforms new members in to contributing Brothers and leaders. Through this, pledges learn how their Chapter and national organization work, the many leadership positions, the committee system, how to recruit top-quality new members, risk management, and how to present themselves in both social and professional settings as respectable gentlemen. Each pledge class mimics the structure of their Chapter by having their own Executive Board and committees (like a pledge Brotherhood committee which plans brotherhood events just for the pledges) so that every pledge obtains real leadership experience even before joining the Chapter. This document details our advanced and exclusive process for building new Chapter leaders.
+                                </p>
                                 
                                 <div class="row " data-wow-delay="0.2s">
                                     <!--First column-->
                                     <div class="col-md-12 text-center">
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Download</button>
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Open</button>
+                                        <%= link_to "Download", login_path, class: "btn btn-info"%>
+                                        <%= link_to "Open", login_path, class: "btn btn-info"%>
                                     </div>
                                     <!--First column-->
                                 </div>                                
@@ -175,13 +193,15 @@
                                 
                                 <h4 class="mt-4 mb-4 text-center" id="resourcedesc">Member Wellness</h4>
 
-                                <p class="text-center">Documentation for this is coming soon.</p>
+                                <p>
+                                    The health and safety of our members are of utmost concern and consideration. PBX offers numerous resources to promote and sustain healthy habits among our members. Such resources include information, memberships, discounts, and promotions for providers of services and products which encourage strong mental and physical health. This document is the list of these offerings and how to utilize them.
+                                </p>
                                 
                                 <div class="row " data-wow-delay="0.2s">
                                     <!--First column-->
                                     <div class="col-md-12 text-center">
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Download</button>
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Open</button>
+                                        <%= link_to "Download", login_path, class: "btn btn-info"%>
+                                        <%= link_to "Open", login_path, class: "btn btn-info"%>
                                     </div>
                                     <!--First column-->
                                 </div>                                
@@ -195,19 +215,65 @@
                                 
                                 <h4 class="mt-4 mb-4 text-center" id="resourcedesc">Property Management Guide</h4>
 
-                                <p class="text-center">Documentation for this is coming soon.</p>
+                                <p>
+                                    Many of our Chapters own or rent their Chapter houses and are responsible for managing them. Property management is a broad term which includes landscaping guidelines, interior maintenance and repair plans, managing house funds and savings, handling security deposits, collecting and making rent and mortgage payments, tenant transition procedures, and understanding lease rules and laws. Property management also includes external affairs such as finding more properties to rent and buy, negotiating rental and purchase agreements, and maintaining positive relationships with our landlords and neighbors. This document contains our strategies and processes for achieving these.
+                                </p>
                                 
                                 <div class="row " data-wow-delay="0.2s">
                                     <!--First column-->
                                     <div class="col-md-12 text-center">
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Download</button>
-                                        <button type="button" class="btn btn-info" id="resourcebutton">Open</button>
+                                        <%= link_to "Download", login_path, class: "btn btn-info"%>
+                                        <%= link_to "Open", login_path, class: "btn btn-info"%>
                                     </div>
                                     <!--First column-->
                                 </div>                                
 
                             </div>
-                            <!--Panel 8-->                            
+                            <!--Panel 8--> 
+                            
+                            <!--Panel 9-->
+                            <div class="tab-pane fade" id="panel59" role="tabpanel">
+                                <br>
+                                
+                                <h4 class="mt-4 mb-4 text-center" id="resourcedesc">Rush Calendar Template</h4>
+
+                                <p>
+                                    Rush is typically a two week process consisting of numerous events and activities for potential new members to attend and meet our Brothers. These events are casual in nature and can include things like cookouts at the house, lawn games, bowling, paintball, pick-up sports games, order pizza and watch professional sports, etc. This document is a sample Rush calendar which can be circulated around campus physically and digitally. 
+                                </p>
+                                
+                                <div class="row " data-wow-delay="0.2s">
+                                    <!--First column-->
+                                    <div class="col-md-12 text-center">
+                                        <%= link_to "Download", login_path, class: "btn btn-info"%>
+                                        <%= link_to "Open", login_path, class: "btn btn-info"%>
+                                    </div>
+                                    <!--First column-->
+                                </div>
+                                
+                            </div>
+                            <!--Panel 9-->
+                            
+                            <!--Panel 10-->
+                            <div class="tab-pane fade" id="panel60" role="tabpanel">
+                                <br>
+                                
+                                <h4 class="mt-4 mb-4 text-center" id="resourcedesc">Semester Calendar Template</h4>
+
+                                <p>
+                                    Chapters run on a routine schedule every semester with several important events happening at the same point within each semester. Such events include Rush week, bid extensions, initiation, philanthropy fundraisers, social and brotherhood events, educational meetings, document due dates, payment due dates, and more. It is important for these dates to be known at the beginning of each semester so that Chapter leaders and committees can aim to meet them. This document is a calendar for our Chapters to use as a template to guide their work and achievements throughout the semester. Some dates are firm such as payment due dates, and others are flexible such as Philanthropy week.
+                                </p>
+                                
+                                <div class="row " data-wow-delay="0.2s">
+                                    <!--First column-->
+                                    <div class="col-md-12 text-center">
+                                        <%= link_to "Download", login_path, class: "btn btn-info"%>
+                                        <%= link_to "Open", login_path, class: "btn btn-info"%>
+                                    </div>
+                                    <!--First column-->
+                                </div>
+                                
+                            </div>
+                            <!--Panel 10-->                            
 
                         </div>
                         

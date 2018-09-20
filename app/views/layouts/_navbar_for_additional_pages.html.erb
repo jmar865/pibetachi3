@@ -6,6 +6,42 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--Links-->
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <%= link_to "About Us", index_path(:anchor => "about"), class:"nav-link", :'data-offset' => '100', method: :get%>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <%= link_to "What We Do", index_path(:anchor => "what_we_do"), class:"nav-link", :'data-offset' => '100', method: :get%>
+                        </li>
+                        <li class="nav-item">
+                            <%= link_to "Chapter Resources", index_path(:anchor => "resources"), class:"nav-link", :'data-offset' => '100', method: :get%>
+                        </li>
+                        <li class="nav-item">
+                            <%#= link_to "Featured Chapters", index_path(:anchor => "featured"), class:"nav-link", :'data-offset' => '100', method: :get%>
+                        </li>
+                        <li class="nav-item">
+                            <%= link_to "Media", index_path(:anchor => "media"), class:"nav-link", :'data-offset' => '100', method: :get%>
+                        </li>
+                        <li class="nav-item">
+                            <%= link_to "FAQ", index_path(:anchor => "faq"), class:"nav-link", :'data-offset' => '100', method: :get%>
+                        </li>
+                    </ul>
+                    <!--Social Icons-->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 <!--Navbar-->
