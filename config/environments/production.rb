@@ -37,7 +37,7 @@ Rails.application.configure do
   config.assets.digest = true
   
   #added by John
-  config.serve_static_files = true
+  #config.serve_static_files = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
