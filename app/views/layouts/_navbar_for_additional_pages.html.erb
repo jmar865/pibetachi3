@@ -2,7 +2,8 @@
         <!--Added inline background color directly to the html below-->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="background: #5c5b5d">
             <div class="container">
-                <%= link_to image_tag("/assets/new_crest.png", :height => 140), index_path, :class => 'navbar-brand' %>
+                <%#= link_to image_tag("/assets/new_crest.png", :height => 140), index_path, :class => 'navbar-brand' %>
+                <%= link_to image_tag("/assets/new_crest.png", :id => 'crest' ), index_path, :class => 'navbar-brand'%>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

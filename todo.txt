@@ -1,0 +1,4 @@
+done - make logo smaller on mobile
+fix viewing images issue on mobile
+done - make expanded navbar collapse once option is selected
+possibly done, need to test - make text be at bottom of page but not off page on all viewing sizes

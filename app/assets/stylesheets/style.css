@@ -1,5 +1,35 @@
 /* CSS for site */
 
+/*sets the height of the crest in the navbar*/
+#crest{
+    height:140px;
+}
+
+/*makes the crest smaller when the navbar collapses*/
+@media (min-width: 251px) and (max-width: 991px) {
+   #crest {
+       height:100px;
+       margin-top: -50px;
+   }
+/*makes the nav bar links not sit on top of the logo when the navbar is collapsed. */   
+   .navbar-collapse {
+       margin-top: 60px;
+   }
+}
+
+/*makes the crest smaller when the navbar collapses*/
+@media (min-width: 1px) and (max-width: 250px) {
+   #crest {
+       height:100px;
+       margin-top: -50px;
+   }
+/*makes the nav bar links not behind the logo when the navbar is collapsed. */   
+   .navbar-toggler-icon {
+       margin-top: 60px;
+   }
+}
+
+
 /*Makes the H1's be gold*/
 h1{
 	color: #C2A14D;
@@ -59,13 +89,6 @@ body {
     margin-top: -5px;
     margin-bottom: -100px;
   padding-right: 20px;
-}
-
-/*This media query makes the nav bar links not sit on top of the logo when the navbar is collapsed. */
-@media (min-width: 1px) and (max-width: 991px) {
-   .navbar-collapse {
-       margin-top: 100px;
-   }
 }
 
 /*Makes the hazing button red*/
@@ -167,4 +190,14 @@ body {
 
 #loginButton.active, #loginButton:active, #loginButton:focus, #loginButton:hover {
     background-color: #154789!important;
+}
+
+/* this may make the pi beta chi b,c,l,f text on home page always be at the bottom of the page and no further. need to test and verify */
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 700px; 
+    } 
 }
