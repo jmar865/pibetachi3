@@ -201,3 +201,9 @@ body {
         height: 700px; 
     } 
 }
+
+/* underlines the links in text 
+a {
+    text-decoration: underline
+}
+*/
