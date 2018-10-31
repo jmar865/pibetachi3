@@ -40,6 +40,11 @@ Rails.application.configure do
   #config.serve_static_files = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
+  
+  config.assets.js_compressor = Uglifier.new(
+    # ES6 support
+    :harmony => true
+  )
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
@@ -82,6 +87,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   config.action_mailer.default_url_options = {host:'lit-bastion-31855.herokuapp.com'}
+  
+
   
   
 end

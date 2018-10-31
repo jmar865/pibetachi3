@@ -110,7 +110,7 @@ body {
 	padding: 0px;
 }
 
-/*Changes the styling of the descriptions in the Chapter Resources section. Note that its div has this in its html: id="resourcenav"  so that it can be specifically referenced here in the css*/
+/*Changes the styling of the descriptions in the Chapter Resources section. Note that its div has this in its html: id="resourcedesc"  so that it can be specifically referenced here in the css*/
 #resourcedesc{
     margin-top: -2rem!important;
 }
@@ -207,3 +207,26 @@ a {
     text-decoration: underline
 }
 */
+
+/* makes the honey pot divs invisible to humans */
+#poneyhot{
+    visibility: hidden;
+}
+
+/*Changes the styling of the FAQ links in the FAQ section. Note that its div has this in its html: id="faqlink"  so that it can be specifically referenced here in the css*/
+#faqlink{
+    color: #154789;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    /*color: #154789;*/
+}
+
+#faqlink:focus{
+    color: #0E305D;
+}
+#faqlink:active{
+    color: #0E305D;
+}
+#faqlink:hover{
+    color: #0E305D;
+}

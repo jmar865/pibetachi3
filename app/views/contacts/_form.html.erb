@@ -44,10 +44,21 @@
               <%= f.label :message, 'What is your message for us?' %><br>
               <%= f.text_area :message, class:"md-textarea"%>
           </div>
-
       </div>
   </div>
   <!-- Third row -->
+  
+  <!-- Fourth row -->
+  <div class="row" id="poneyhot">
+      <!-- Grid column -->
+      <div class="col-md-12">
+          <div class="md-form">
+              <i class="fa fa-pencil prefix grey-text"></i>
+              <%= f.invisible_captcha :subtitle %><br>
+          </div>
+      </div>
+  </div>
+  <!-- Fourth row -->  
 
   <div class="actions text-center">
      <%= button_tag type: 'submit', class: "btn btn-info" do %>
