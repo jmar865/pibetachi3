@@ -1,3 +1,0 @@
-fix viewing images issue on mobile
-make homepage text be at bottom of page but not off page on all viewing sizes for mobile
-Pillar titles are left aligned when screen is mid size. they should always be centered

@@ -29,6 +29,15 @@
    }
 }
 
+/* makes the "about us" header not fall under the main picture when the screen height shrinks below 616px. Without this, these are set to 100% instead of 700px */
+@media (max-height: 616px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+    height: 700px; 
+    } 
+}
 
 /*Makes the H1's be gold*/
 h1{
@@ -104,7 +113,6 @@ body {
     background-color: #154789!important;
 }
 
-
 /*Changes the styling of the nav links in the Chapter Resources section. Note that its div has this in its html: id="resourcenav"  so that it can be specifically referenced here in the css*/
 #resourcenav{
 	padding: 0px;
@@ -115,7 +123,7 @@ body {
     margin-top: -2rem!important;
 }
 
-/*This media query makes the margin above the chapter resources description be 1.5 instead of 2 when the navs sit on top of the description instead of beside it */
+/*This media query makes the margin above the chapter resources description be 1.3 instead of 2 when the navs sit on top of the description instead of beside it */
 @media (min-width: 1px) and (max-width: 767px) {
     #resourcedesc{
         margin-top: -1.3rem!important;
@@ -127,6 +135,30 @@ body {
     padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+
+/* makes the honey pot divs invisible to humans */
+#poneyhot{
+    visibility: hidden;
+}
+
+/*Changes the styling of the FAQ links in the FAQ section. Note that its div has this in its html: id="faqlink"  so that it can be specifically referenced here in the css*/
+#faqlink{
+    color: #154789;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    /*color: #154789;*/
+}
+
+#faqlink:focus{
+    color: #0E305D;
+}
+#faqlink:active{
+    color: #0E305D;
+}
+#faqlink:hover{
+    color: #0E305D;
 }
 
 
@@ -190,43 +222,4 @@ body {
 
 #loginButton.active, #loginButton:active, #loginButton:focus, #loginButton:hover {
     background-color: #154789!important;
-}
-
-/* this may make the pi beta chi b,c,l,f text on home page always be at the bottom of the page and no further. need to test and verify */
-@media (max-width: 740px) {
-    .full-height,
-    .full-height body,
-    .full-height header,
-    .full-height header .view {
-        height: 700px; 
-    } 
-}
-
-/* underlines the links in text 
-a {
-    text-decoration: underline
-}
-*/
-
-/* makes the honey pot divs invisible to humans */
-#poneyhot{
-    visibility: hidden;
-}
-
-/*Changes the styling of the FAQ links in the FAQ section. Note that its div has this in its html: id="faqlink"  so that it can be specifically referenced here in the css*/
-#faqlink{
-    color: #154789;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    /*color: #154789;*/
-}
-
-#faqlink:focus{
-    color: #0E305D;
-}
-#faqlink:active{
-    color: #0E305D;
-}
-#faqlink:hover{
-    color: #0E305D;
 }
