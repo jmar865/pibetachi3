@@ -12189,7 +12189,8 @@ a.pswp__share--download:hover {
     background-position: center
 }
 
-@media (min-width:1366px) {
+@media (min-width:768px) {
+    /* ^used to be 1366px */
     .streak.streak-photo {
         background-attachment: fixed
     }

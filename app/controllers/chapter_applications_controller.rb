@@ -1,5 +1,10 @@
 class ChapterApplicationsController < ApplicationController
   before_action :set_chapter_application, only: [:show, :edit, :update, :destroy]
+  invisible_captcha only: [:create, :update], honeypot: :subtitle, on_spam: :your_spam_callback_method
+  
+  def your_spam_callback_method
+    redirect_to root_path
+  end
 
   # GET /chapter_applications
   # GET /chapter_applications.json

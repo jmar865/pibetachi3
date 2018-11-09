@@ -21533,7 +21533,8 @@ a.pswp__share--download:hover {
     background-position: center
 }
 
-@media (min-width:1366px) {
+@media (min-width:768px) {
+    /* ^used to be 1366px */
     .streak.streak-photo {
         background-attachment: fixed
     }
@@ -23569,7 +23570,7 @@ hr{
 
 /*Brings up the main image text a little bit so its not at the verrrry bottom of the page. Note that its div has this in its html: id="picturetext"  so that it can be specifically referenced here in the css*/
 #picturetext{
-margin-bottom: 30px;
+margin-bottom: 50px;
 }
 
 #leftalign{
@@ -23649,12 +23650,6 @@ body {
     padding-right: 25px;
 }
 
-
-/* makes the honey pot divs invisible to humans */
-#poneyhot{
-    visibility: hidden;
-}
-
 /*Changes the styling of the FAQ links in the FAQ section. Note that its div has this in its html: id="faqlink"  so that it can be specifically referenced here in the css*/
 #faqlink{
     color: #154789;
@@ -23671,6 +23666,11 @@ body {
 }
 #faqlink:hover{
     color: #0E305D;
+}
+
+#whatwedoimg{
+    max-width: 60%;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
 }
 
 
