@@ -160,6 +160,14 @@ body {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
 }
 
+/**makes the images in the media section all have the same set height so that they stack right. Otherwise they go crazy. 
+.mdb-lightbox figure{ 
+    height:190px
+} **/
+
+/**makes the images in the media section all have the same set height so that they stack right. Otherwise they go crazy. Better than the other solution above**/
+.mdb-lightbox figure:nth-child(4n+5) { clear: left; }
+
 
 /************************for the login form************************/
 .form-signin {
